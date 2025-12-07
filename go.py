@@ -135,8 +135,6 @@ with st.sidebar:
 
     run_btn = st.button("Run Embed + Recover", type="primary")
 
-st.caption(f"Loaded: `{CKPT_PATH}` | device=`{device}` | alpha=`{alpha_used}`")
-
 if run_btn:
     if mri_file is None or logo_file is None:
         st.error("Upload BOTH an MRI image and a logo image.")
